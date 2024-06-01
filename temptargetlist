@@ -1,0 +1,10 @@
+             }
+            if (temptargetlist->next != nullptr)
+                temptargetlist = temptargetlist->next;
+            else
+                break;
+         }
+        if (tempbulletlist->next != nullptr)
+            tempbulletlist = tempbulletlist->next;
+        else
+            break;
