@@ -1,0 +1,14 @@
+     }
+    return grade;
+}
+ 
+ bool is_gameover(int x, int y, nodeptr_t targetlist)
+ {
+     nodeptr_t temptargetlist = targetlist;
+     while (temptargetlist->next != nullptr)
+     {
+         int tempsub = abs((temptargetlist->next->x) - x);
+         if (tempsub == 0 && temptargetlist->next->y > y)
+         {
+             return 1;
+         }
