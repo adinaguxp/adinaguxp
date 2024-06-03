@@ -1,0 +1,6 @@
+p_desRetStruct _3desEncryption(data_size data, data_lenght_size data_lenght, subkey_size key, data_lenght_size key_lenght, enumFillingMode fillingMode)
+{
+    if(key_lenght != 24 || (fillingMode != NOPADDING && fillingMode != PKCS5PADDING))
+    {
+        return NULL;
+    }
